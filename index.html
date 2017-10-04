@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Latitude Analysis: Summary</title>
+	<link rel="stylesheet" type="text/css" href="index_style.css">
+</head>
+
+<div class="menu">
+	<a id="main" href="index.html">Latitude</a>
+	<a style="float: right" href="Comparison.html">Comparison</a>
+	<a style="float: right" href="Data.html">Data</a>
+
+	<div style="float: right" class="dropdown">
+		<button class="dropbtn">Plot</button>
+		<div class="dropdown-content">
+			<a href="visualization_1.html">Temperature</a>
+			<a href="visualization_2.html">Humidity</a>
+			<a href="visualization_3.html">Cloudiness</a>
+			<a href="visualization_4.html">Wind Speed</a>
+		</div>
+	</div>
+</div>
+
+<div class="text_box">
+	<h1>Summary: Latitude vs. X</h1>
+
+	<img id="demo" align="left" src="images/Lat_vs_Temp.png" border="0">
+
+	<p>The purpose of this project is to analyze weather changes as you get closer to the equator.</p>
+	<p>First, 500 coordinates (latitudes and longtitudes) were randomly generated. Using citipy, we located the cities closest to the 500 random coordinates. Next, ustilizing the OpenWeatherMap API to assemble a dataset of the available information corresponding each of the 500 cities. For this project, we focused on the temperature, cloudiness, wind speed and humidity of each city. After creating a dataset, we created various plots of latitude vs. the weather factors mentioned with Matplotlib.</p>
+	<p>This site provides the source data and the visualizations created for analysis and the descriptions of trends that were observed throughout the course of our analysis.</p>
+</div>
+
+<div class="pic_links">
+
+	<h3>Visualizations</h3>
+	<a href="visualization_1.html"><img class="img" src="images/Lat_vs_Temp.png"></a>
+	<a href="visualization_2.html"><img class="img" src="images/Lat_vs_Humidity.png"></a>
+	<a href="visualization_3.html"><img class="img" src="images/Lat_vs_Cloud.png"></a>
+	<a href="visualization_4.html"><img class="img" src="images/Lat_vs_Wind.png"></a>
+
+</div>
+
+</html>
